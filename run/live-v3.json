@@ -1,0 +1,622 @@
+{
+  "model": "insightflow-qwen2.5-7b",
+  "data": "synthetic",
+  "answers": [
+    {
+      "question": "今年上半年比去年同期表现怎么样，哪些商品贡献了变化？",
+      "mode": "本机 AI",
+      "interpretation": "本机 AI 选取要点，数值由 SQL 计算",
+      "context": {
+        "action": "compare",
+        "year": 2026,
+        "period": "H1",
+        "group_by": "product",
+        "product": null,
+        "mode": "本机语言模型"
+      },
+      "seconds": 2.08,
+      "previous": {
+        "rows": 36,
+        "months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "revenue": 6186.0,
+        "profit": 3058.0,
+        "margin": 0.4943420627222761,
+        "company_margin": 0.4943420627222761,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ]
+      },
+      "current": {
+        "rows": 36,
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "revenue": 5886.0,
+        "profit": 2910.0,
+        "margin": 0.4943934760448522,
+        "company_margin": 0.4943934760448522,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ]
+      },
+      "changes": {
+        "revenue_delta": -300.0,
+        "profit_delta": -148.0,
+        "revenue_growth": -0.04849660523763336,
+        "profit_growth": -0.04839764551994768,
+        "margin_pp": 0.005141332257607711
+      },
+      "detail": null,
+      "contributions": [
+        {
+          "name": "Desk Lamp",
+          "prev_revenue": 900.0,
+          "curr_revenue": 1020.0,
+          "delta_revenue": 120.0,
+          "prev_profit": 420.0,
+          "curr_profit": 476.0,
+          "delta_profit": 56.0
+        },
+        {
+          "name": "Travel Mug",
+          "prev_revenue": 720.0,
+          "curr_revenue": 800.0,
+          "delta_revenue": 80.0,
+          "prev_profit": 396.0,
+          "curr_profit": 440.0,
+          "delta_profit": 44.0
+        },
+        {
+          "name": "Notebook",
+          "prev_revenue": 408.0,
+          "curr_revenue": 360.0,
+          "delta_revenue": -48.0,
+          "prev_profit": 238.0,
+          "curr_profit": 210.0,
+          "delta_profit": -28.0
+        },
+        {
+          "name": "Water Bottle",
+          "prev_revenue": 750.0,
+          "curr_revenue": 650.0,
+          "delta_revenue": -100.0,
+          "prev_profit": 420.0,
+          "curr_profit": 364.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Desk Mat",
+          "prev_revenue": 1008.0,
+          "curr_revenue": 896.0,
+          "delta_revenue": -112.0,
+          "prev_profit": 504.0,
+          "curr_profit": 448.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Backpack",
+          "prev_revenue": 2400.0,
+          "curr_revenue": 2160.0,
+          "delta_revenue": -240.0,
+          "prev_profit": 1080.0,
+          "curr_profit": 972.0,
+          "delta_profit": -108.0
+        }
+      ],
+      "insights": [
+        "2026 年上半年，已记录的销售额为 5,886，比 2025 年上半年减少 300（4.85%）。同期毛利为 2,910，较上年减少 148。整体毛利率基本持平，两期相差不足 0.01 个百分点（上期 49.43%，本期 49.44%）。",
+        "毛利下降的商品合计减少 248。其中 Backpack 较上期减少 108，对毛利的负向贡献最大。",
+        "销售额增长的商品合计增加 200。其中 Desk Lamp 较上期增加 120，对销售额的正向贡献最大。"
+      ],
+      "download_sha256": "f26e46a1d2416ca41a4d71b7129d6d3bffd9a856381ab5ffcc7d49e3a1833b94"
+    },
+    {
+      "question": "只看 Backpack，它的毛利率怎么样？",
+      "mode": "本机 AI",
+      "interpretation": "本机 AI 选取要点，数值由 SQL 计算",
+      "context": {
+        "action": "product",
+        "year": 2026,
+        "period": "H1",
+        "group_by": "product",
+        "product": "Backpack",
+        "mode": "本机语言模型"
+      },
+      "seconds": 1.99,
+      "previous": {
+        "rows": 36,
+        "months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "revenue": 6186.0,
+        "profit": 3058.0,
+        "margin": 0.4943420627222761,
+        "company_margin": 0.4943420627222761,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ]
+      },
+      "current": {
+        "rows": 36,
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "revenue": 5886.0,
+        "profit": 2910.0,
+        "margin": 0.4943934760448522,
+        "company_margin": 0.4943934760448522,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ]
+      },
+      "changes": {
+        "revenue_delta": -300.0,
+        "profit_delta": -148.0,
+        "revenue_growth": -0.04849660523763336,
+        "profit_growth": -0.04839764551994768,
+        "margin_pp": 0.005141332257607711
+      },
+      "detail": {
+        "product": "Backpack",
+        "previous": {
+          "rows": 6,
+          "months": [
+            "2025-01",
+            "2025-02",
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06"
+          ],
+          "revenue": 2400.0,
+          "profit": 1080.0,
+          "margin": 0.45,
+          "company_margin": 0.4943420627222761,
+          "revenue_share": 0.3879728419010669,
+          "profit_share": 0.35317200784826686,
+          "company_months": [
+            "2025-01",
+            "2025-02",
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06"
+          ]
+        },
+        "current": {
+          "rows": 6,
+          "months": [
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ],
+          "revenue": 2160.0,
+          "profit": 972.0,
+          "margin": 0.45,
+          "company_margin": 0.4943934760448522,
+          "revenue_share": 0.3669724770642202,
+          "profit_share": 0.334020618556701,
+          "company_months": [
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ]
+        }
+      },
+      "contributions": [
+        {
+          "name": "Desk Lamp",
+          "prev_revenue": 900.0,
+          "curr_revenue": 1020.0,
+          "delta_revenue": 120.0,
+          "prev_profit": 420.0,
+          "curr_profit": 476.0,
+          "delta_profit": 56.0
+        },
+        {
+          "name": "Travel Mug",
+          "prev_revenue": 720.0,
+          "curr_revenue": 800.0,
+          "delta_revenue": 80.0,
+          "prev_profit": 396.0,
+          "curr_profit": 440.0,
+          "delta_profit": 44.0
+        },
+        {
+          "name": "Notebook",
+          "prev_revenue": 408.0,
+          "curr_revenue": 360.0,
+          "delta_revenue": -48.0,
+          "prev_profit": 238.0,
+          "curr_profit": 210.0,
+          "delta_profit": -28.0
+        },
+        {
+          "name": "Water Bottle",
+          "prev_revenue": 750.0,
+          "curr_revenue": 650.0,
+          "delta_revenue": -100.0,
+          "prev_profit": 420.0,
+          "curr_profit": 364.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Desk Mat",
+          "prev_revenue": 1008.0,
+          "curr_revenue": 896.0,
+          "delta_revenue": -112.0,
+          "prev_profit": 504.0,
+          "curr_profit": 448.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Backpack",
+          "prev_revenue": 2400.0,
+          "curr_revenue": 2160.0,
+          "delta_revenue": -240.0,
+          "prev_profit": 1080.0,
+          "curr_profit": 972.0,
+          "delta_profit": -108.0
+        }
+      ],
+      "insights": [
+        "2026 年上半年，Backpack 的毛利率两期均为 45.00%。按已记录交易，该商品销售额为 2,160，比 2025 年上半年减少 240。",
+        "同期全部商品的毛利率为 49.44%，该商品低于整体 4.44 个百分点。",
+        "该商品本期毛利为 972，比上年同期减少 108。"
+      ],
+      "download_sha256": "fa088fb8b397840197b26f84a839ddb8188512206418bcabd28dacb3c226a630"
+    },
+    {
+      "question": "只看 Backpack，毛利率比去年同期怎么样？",
+      "mode": "本机 AI",
+      "interpretation": "本机 AI 选取要点，数值由 SQL 计算",
+      "context": {
+        "action": "product",
+        "year": 2026,
+        "period": "H1",
+        "group_by": "product",
+        "product": "Backpack",
+        "mode": "本机语言模型"
+      },
+      "seconds": 1.93,
+      "previous": {
+        "rows": 36,
+        "months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ],
+        "revenue": 6186.0,
+        "profit": 3058.0,
+        "margin": 0.4943420627222761,
+        "company_margin": 0.4943420627222761,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06"
+        ]
+      },
+      "current": {
+        "rows": 36,
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ],
+        "revenue": 5886.0,
+        "profit": 2910.0,
+        "margin": 0.4943934760448522,
+        "company_margin": 0.4943934760448522,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2026-01",
+          "2026-02",
+          "2026-03",
+          "2026-04",
+          "2026-05",
+          "2026-06"
+        ]
+      },
+      "changes": {
+        "revenue_delta": -300.0,
+        "profit_delta": -148.0,
+        "revenue_growth": -0.04849660523763336,
+        "profit_growth": -0.04839764551994768,
+        "margin_pp": 0.005141332257607711
+      },
+      "detail": {
+        "product": "Backpack",
+        "previous": {
+          "rows": 6,
+          "months": [
+            "2025-01",
+            "2025-02",
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06"
+          ],
+          "revenue": 2400.0,
+          "profit": 1080.0,
+          "margin": 0.45,
+          "company_margin": 0.4943420627222761,
+          "revenue_share": 0.3879728419010669,
+          "profit_share": 0.35317200784826686,
+          "company_months": [
+            "2025-01",
+            "2025-02",
+            "2025-03",
+            "2025-04",
+            "2025-05",
+            "2025-06"
+          ]
+        },
+        "current": {
+          "rows": 6,
+          "months": [
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ],
+          "revenue": 2160.0,
+          "profit": 972.0,
+          "margin": 0.45,
+          "company_margin": 0.4943934760448522,
+          "revenue_share": 0.3669724770642202,
+          "profit_share": 0.334020618556701,
+          "company_months": [
+            "2026-01",
+            "2026-02",
+            "2026-03",
+            "2026-04",
+            "2026-05",
+            "2026-06"
+          ]
+        }
+      },
+      "contributions": [
+        {
+          "name": "Desk Lamp",
+          "prev_revenue": 900.0,
+          "curr_revenue": 1020.0,
+          "delta_revenue": 120.0,
+          "prev_profit": 420.0,
+          "curr_profit": 476.0,
+          "delta_profit": 56.0
+        },
+        {
+          "name": "Travel Mug",
+          "prev_revenue": 720.0,
+          "curr_revenue": 800.0,
+          "delta_revenue": 80.0,
+          "prev_profit": 396.0,
+          "curr_profit": 440.0,
+          "delta_profit": 44.0
+        },
+        {
+          "name": "Notebook",
+          "prev_revenue": 408.0,
+          "curr_revenue": 360.0,
+          "delta_revenue": -48.0,
+          "prev_profit": 238.0,
+          "curr_profit": 210.0,
+          "delta_profit": -28.0
+        },
+        {
+          "name": "Water Bottle",
+          "prev_revenue": 750.0,
+          "curr_revenue": 650.0,
+          "delta_revenue": -100.0,
+          "prev_profit": 420.0,
+          "curr_profit": 364.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Desk Mat",
+          "prev_revenue": 1008.0,
+          "curr_revenue": 896.0,
+          "delta_revenue": -112.0,
+          "prev_profit": 504.0,
+          "curr_profit": 448.0,
+          "delta_profit": -56.0
+        },
+        {
+          "name": "Backpack",
+          "prev_revenue": 2400.0,
+          "curr_revenue": 2160.0,
+          "delta_revenue": -240.0,
+          "prev_profit": 1080.0,
+          "curr_profit": 972.0,
+          "delta_profit": -108.0
+        }
+      ],
+      "insights": [
+        "2026 年上半年，Backpack 的毛利率两期均为 45.00%。按已记录交易，该商品销售额为 2,160，比 2025 年上半年减少 240。",
+        "该商品本期毛利为 972，比上年同期减少 108。",
+        "同期全部商品的毛利率为 49.44%，该商品低于整体 4.44 个百分点。"
+      ],
+      "download_sha256": "b4aa25b280038e845d09b5e6b787db15932d71c91d0c168c91720d4565836d6f"
+    },
+    {
+      "question": "比较 2026 年第一季度与去年同期，按品类分析销售额和利润的变化",
+      "mode": "本机 AI",
+      "interpretation": "本机 AI 选取要点，数值由 SQL 计算",
+      "context": {
+        "action": "compare",
+        "year": 2026,
+        "period": "Q1",
+        "group_by": "category",
+        "product": null,
+        "mode": "本机语言模型"
+      },
+      "seconds": 1.87,
+      "previous": {
+        "rows": 18,
+        "months": [
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ],
+        "revenue": 3118.0,
+        "profit": 1542.0,
+        "margin": 0.49454778704297625,
+        "company_margin": 0.49454778704297625,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2025-01",
+          "2025-02",
+          "2025-03"
+        ]
+      },
+      "current": {
+        "rows": 18,
+        "months": [
+          "2026-01",
+          "2026-02",
+          "2026-03"
+        ],
+        "revenue": 2768.0,
+        "profit": 1368.0,
+        "margin": 0.49421965317919075,
+        "company_margin": 0.49421965317919075,
+        "revenue_share": 1.0,
+        "profit_share": 1.0,
+        "company_months": [
+          "2026-01",
+          "2026-02",
+          "2026-03"
+        ]
+      },
+      "changes": {
+        "revenue_delta": -350.0,
+        "profit_delta": -174.0,
+        "revenue_growth": -0.11225144323284157,
+        "profit_growth": -0.11284046692607004,
+        "margin_pp": -0.03281338637854958
+      },
+      "detail": null,
+      "contributions": [
+        {
+          "name": "Home",
+          "prev_revenue": 540.0,
+          "curr_revenue": 480.0,
+          "delta_revenue": -60.0,
+          "prev_profit": 252.0,
+          "curr_profit": 224.0,
+          "delta_profit": -28.0
+        },
+        {
+          "name": "Office",
+          "prev_revenue": 668.0,
+          "curr_revenue": 588.0,
+          "delta_revenue": -80.0,
+          "prev_profit": 350.0,
+          "curr_profit": 308.0,
+          "delta_profit": -42.0
+        },
+        {
+          "name": "Kitchen",
+          "prev_revenue": 770.0,
+          "curr_revenue": 680.0,
+          "delta_revenue": -90.0,
+          "prev_profit": 427.0,
+          "curr_profit": 377.0,
+          "delta_profit": -50.0
+        },
+        {
+          "name": "Accessories",
+          "prev_revenue": 1140.0,
+          "curr_revenue": 1020.0,
+          "delta_revenue": -120.0,
+          "prev_profit": 513.0,
+          "curr_profit": 459.0,
+          "delta_profit": -54.0
+        }
+      ],
+      "insights": [
+        "2026 年第一季度，已记录的销售额为 2,768，比 2025 年第一季度减少 350（11.23%）。同期毛利为 1,368，较上年减少 174。整体毛利率从 49.45% 变为 49.42%，下降 0.03 个百分点。",
+        "毛利下降的品类合计减少 174。其中 Accessories 较上期减少 54，对毛利的负向贡献最大。",
+        "销售额下降的品类合计减少 350。其中 Accessories 较上期减少 120，对销售额的负向贡献最大。"
+      ],
+      "download_sha256": "57028bfeef7fa6ebec6098bc44145ca14aa8f4065ea20c23e958f3fe6e0d9073"
+    }
+  ],
+  "category_question_explanation": [
+    "将当前工作表按品类分组计算销售额合计，本次返回 4 组。",
+    "在已返回的结果中，「Accessories」的销售额合计最高，为 4,560。其次是「Kitchen」，为 2,920。",
+    "各组销售额加总为 12,072，最高单组占合计的 37.77%。"
+  ],
+  "rejection_and_context_reset": true
+}

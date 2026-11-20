@@ -1,0 +1,7 @@
+customer_id,customer_name,region,segment
+C001,Northstar Retail,North,Retail
+C002,Bluebird Studio,East,Business
+C003,Cedar Shop,West,Retail
+C004,Lumen Office,South,Business
+C005,Harbor Goods,East,Retail
+C006,Maple Works,North,Business

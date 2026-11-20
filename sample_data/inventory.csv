@@ -1,0 +1,7 @@
+product_id,product,category,stock_on_hand,reorder_level,unit_cost
+P001,Desk Lamp,Home,14,20,16
+P002,Travel Mug,Kitchen,34,15,9
+P003,Notebook,Office,45,25,5
+P004,Backpack,Accessories,8,12,33
+P005,Water Bottle,Kitchen,22,18,11
+P006,Desk Mat,Office,16,16,14
